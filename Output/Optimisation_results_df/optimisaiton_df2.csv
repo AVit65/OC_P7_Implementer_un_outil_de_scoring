@@ -1,0 +1,2 @@
+model,score,train_score,val_score,test_score,best_params,best_seuil
+LogisticRegression,score_métier,0.6495723716301909,0.6426213781665637,0.6534965774027284,"{'smote__sampling_strategy': 0.5068354983099346, 'smote__k_neighbors': 3, 'clf__C': 0.5614418085668582, 'clf__penalty': 'l1', 'clf__solver': 'saga', 'clf__class_weight': 'balanced'}",0.51
