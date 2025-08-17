@@ -1,3 +1,4 @@
+
 name: API Tests
 
 on:
@@ -31,13 +32,13 @@ jobs:
 
       - name: List files in Data folder
         run: |
-          ls -l Data
+          ls -l Output/Pipelines
 
       - name: Check if pipeline file exists
         run: |
-          if [ -f Data/pipeline_to_deployed.joblib ]; then
+          if [ -f Output/Pipelines/pipeline_to_deployed.joblib ]; then
               echo "Pipeline file exists, checking hash..."
-              sha256sum Data/pipeline_to_deployed.joblib
+              sha256sum Output/Pipelines/pipeline_to_deployed.joblib
           else
               echo "Pipeline file not found!"
               exit 1
