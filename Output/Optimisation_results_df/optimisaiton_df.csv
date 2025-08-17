@@ -1,0 +1,4 @@
+model,train_score,val_score,test_score,best_params
+LogisticRegression,146386,145508,36678,"{'clf__C': 37.45407443072437, 'clf__penalty': 'l1', 'clf__solver': 'saga', 'clf__class_weight': None}"
+RandomForestClassifier,386266,139766,36268,"{'clf__n_estimators': 144, 'clf__max_depth': 29, 'clf__min_samples_split': 8, 'clf__min_samples_leaf': 3}"
+XGBClassifier,282942,144004,37152,"{'clf__n_estimators': 64, 'clf__max_depth': 14, 'clf__learning_rate': 0.18432335340553055, 'clf__subsample': 0.8540362888980227, 'clf__colsample_bytree': 0.5102922471479012, 'clf__gamma': 4.8495492608099715}"
