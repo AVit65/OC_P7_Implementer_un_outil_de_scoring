@@ -41,9 +41,19 @@ OC_projet_7/
 ```
 **Données**
 
-Les données utilisées peuvent être téléchargées sur [Kaggle]( https://www.kaggle.com/c/home-credit-default-risk/data)  
+Les tables de données brutes listées ci-dessous et utilisées dans les notebook d'exploration, de modélisation et d'analyse de dérive peuvent être téléchargées sur [Kaggle]( https://www.kaggle.com/c/home-credit-default-risk/data)  
 
-**Lien vers l'API** 
+- application_{train|test}.csv
+- bureau.csv
+- bureau_balance.csv
+- POS_CASH_balance.csv
+- credit_card_balance.csv
+- previous_application.csv
+- installments_payments.csv
+- HomeCredit_columns_description.csv
 
-https://oc-p7-cu77.onrender.com/
+**Lien vers le dashboard et vers l'API** 
+
+- API: https://oc-p7-cu77.onrender.com/
+- Dashboard : 
 
