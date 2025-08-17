@@ -61,15 +61,16 @@ logger.info("Démarrage du serveur")
 # Chargement des données 
 #----------------------------------------------------------------------------------------------
 
-# BASE_DIR = dossier où se trouve app.py
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+from pathlib import Path
 
-# ROOT_DIR = racine du projet (un niveau au-dessus de API/)
-ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
+# Définition du chemin absolu du dossier du script
+script_dir = Path(__file__).resolve().parent
 
-# Définition du chemin relatif pour charger la pipeline et les données clients
-pipeline_path = os.path.join(ROOT_DIR, "Output/Pipelines", "pipeline_to_deployed.joblib")
-client_path = os.path.join(ROOT_DIR, "Output/Data_clients", "App_test_final.csv")
+# Définition du chemin vers la pipeline
+pipeline_path = script_dir.parent / "Output" / "Pipelines" / "pipeline_to_deployed.joblib"
+
+# Définition du chemin vers la table client
+client_path = script_dir.parent / "Output" / "Data_clients" / "App_test_final.csv"
 
 # Chargement de la pipeline et de la table client
 pipeline = joblib.load(pipeline_path)
