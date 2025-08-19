@@ -10,7 +10,7 @@ et des données issues d'autres institutions financières.
 **Architecture du repository**
 
 ```
-OC_projet_7/
+OC_P7_Implementer_un_outil_de_scoring/
 │
 ├── .github/workflows/                          # Dossier contenant les workflows GitHub Actions 
 │   ├── deployed.yml                            # Workflow de déploiement automatique de l’API
@@ -29,8 +29,7 @@ OC_projet_7/
 │   └── Pipelines/pipeline_to_deployed.joblib   # Pipeline de machine learning pré entraîné
 │
 ├── Streamlit/                                  # Code source du dashboard
-│   ├── __init__.py                             # Fichier d’initialisation 
-│   └── api.py                                  # Script principal du dashboard
+│   └── streamlit.py                            # Script principal du dashboard
 │ 
 └── Test/                                       # Scripts de test
 │  ├── __init__.py                              # Fichier d’initialisation 
