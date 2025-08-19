@@ -12,31 +12,31 @@ et des données issues d'autres institutions financières.
 ```
 OC_projet_7/
 │
-├── README.md                         # Documentation générale du projet
-├── requirements.txt                  # Liste des dépendances Python nécessaires
-├── .gitignore                        # Liste des fichiers et dossiers à ignorer par Git
-├── Procfile                          # Fichier de configuration pour le déploiement 
-├── .python-version                   # Version de Python utilisée 
+├── README.md                                   # Documentation générale du projet
+├── requirements.txt                            # Liste des dépendances Python nécessaires
+├── .gitignore                                  # Liste des fichiers et dossiers à ignorer par Git
+├── Procfile                                    # Fichier de configuration pour le déploiement 
+├── .python-version                             # Version de Python utilisée 
 │
-├── .github/workflows/                # Définition des workflows GitHub Actions 
-│   ├── deployed.yml                  # Workflow de déploiement automatique de l’API
-│   └── test.yml                      # Workflow de tests automatisés 
+├── .github/workflows/                          # Dossier contenant les workflows GitHub Actions 
+│   ├── deployed.yml                            # Workflow de déploiement automatique de l’API
+│   └── test.yml                                # Workflow de tests automatisés 
 │
 ├── Data/
       
-├── Output/                           # Données et modèles sauvegardés
-│   ├── App_test_final.csv            # Jeu de données client test pour l'API
-│   └── pipeline_to_deployed.joblib   # Pipeline de machine learning pré entraîné
+├── Output/                                     # Données et modèles sauvegardés
+│   ├── Data/clients/App_test_final.csv         # Jeu de données client test pour l'API
+│   └── Pipelines/pipeline_to_deployed.joblib   # Pipeline de machine learning pré entraîné
 │
-├── notebooks/                        # Notebooks d’exploration, d’analyse et de modélisation
+├── notebooks/                                  # Notebooks d’exploration, d’analyse et de modélisation
 │
-├── API/                              # Code source de l’API
-│   ├── __init__.py                   # Fichier d’initialisation 
-│   └── app.py                        # Script principal de l’API
+├── API/                                        # Code source de l’API
+│   ├── __init__.py                             # Fichier d’initialisation 
+│   └── api.py                                  # Script principal de l’API
 │
-└── Test/                             # Scripts de test
-    ├── __init__.py                   # Fichier d’initialisation 
-    └── test_api.py                   # Tests unitaires de l’API
+└── Test/                                       # Scripts de test
+    ├── __init__.py                             # Fichier d’initialisation 
+    └── test_api.py                             # Tests unitaires de l’API
 
 ```
 **Données**
@@ -54,6 +54,6 @@ Les tables de données brutes listées ci-dessous et utilisées dans les noteboo
 
 **Lien vers le dashboard et vers l'API** 
 
-- API: https://oc-p7-cu77.onrender.com/
-- Dashboard : 
+- API: https://api-oc-p7.onrender.com/docs#/  
+- Dashboard : https://oc-p7-cu77.onrender.com/
 
