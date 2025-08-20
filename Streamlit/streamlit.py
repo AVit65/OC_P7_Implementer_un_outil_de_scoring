@@ -47,7 +47,7 @@ if st.button("Prédire"):
                     fig = go.Figure(go.Indicator(
                         mode = "gauge+number",
                         value = proba * 100,  
-                        number = {'suffix': "%"}
+                        number = {'suffix': "%"},
                         title = {'text': "Risque (%)"},
                         gauge = {
                             'axis': {'range': [0, 100]},
