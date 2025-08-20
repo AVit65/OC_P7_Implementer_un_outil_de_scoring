@@ -10,40 +10,53 @@ et des données issues d'autres institutions financières.
 **Architecture du repository**
 
 ```
-OC_projet_7/
+OC_P7_Implementer_un_outil_de_scoring/
 │
-├── README.md                         # Documentation générale du projet
-├── requirements.txt                  # Liste des dépendances Python nécessaires
-├── .gitignore                        # Liste des fichiers et dossiers à ignorer par Git
-├── Procfile                          # Fichier de configuration pour le déploiement 
-├── .python-version                   # Version de Python utilisée 
+├── .github/workflows/                          # Dossier contenant les workflows GitHub Actions 
+│   ├── deployed.yml                            # Workflow de déploiement automatique de l’API
+│   └── test.yml                                # Workflow de tests automatisés 
 │
-├── .github/workflows/                # Définition des workflows GitHub Actions 
-│   ├── deployed.yml                  # Workflow de déploiement automatique de l’API
-│   └── test.yml                      # Workflow de tests automatisés 
-│
+├── API/                                        # Code source de l’API
+│   ├── __init__.py                             # Fichier d’initialisation 
+│   └── api.py                                  # Script principal de l’API
+│ 
 ├── Data/
-      
-├── Output/                           # Données et modèles sauvegardés
-│   ├── App_test_final.csv            # Jeu de données client test pour l'API
-│   └── pipeline_to_deployed.joblib   # Pipeline de machine learning pré entraîné
+│ 
+├── notebooks/                                  # Notebooks d’exploration, d’analyse et de modélisation
+│ 
+├── Output/                                     # Données et modèles sauvegardés
+│   ├── Data/clients/App_test_final.csv         # Jeu de données client test pour l'API
+│   └── Pipelines/pipeline_to_deployed.joblib   # Pipeline de machine learning pré entraîné
 │
-├── notebooks/                        # Notebooks d’exploration, d’analyse et de modélisation
+├── Streamlit/                                  # Code source du dashboard
+│   └── streamlit.py                            # Script principal du dashboard
+│ 
+└── Test/                                       # Scripts de test
+│  ├── __init__.py                              # Fichier d’initialisation 
+│  └── test_api.py                              # Tests unitaires de l’API
 │
-├── API/                              # Code source de l’API
-│   ├── __init__.py                   # Fichier d’initialisation 
-│   └── app.py                        # Script principal de l’API
-│
-└── Test/                             # Scripts de test
-    ├── __init__.py                   # Fichier d’initialisation 
-    └── test_api.py                   # Tests unitaires de l’API
+├── README.md                                   # Documentation générale du projet
+├── requirements.txt                            # Liste des dépendances Python nécessaires
+├── .gitignore                                  # Liste des fichiers et dossiers à ignorer par Git
+├── Procfile                                    # Fichier de configuration pour le déploiement 
+├── .python-version                             # Version de Python utilisée 
 
 ```
 **Données**
 
-Les données utilisées peuvent être téléchargées sur [Kaggle]( https://www.kaggle.com/c/home-credit-default-risk/data)  
+Les tables de données brutes listées ci-dessous et utilisées dans les notebook d'exploration, de modélisation et d'analyse de dérive peuvent être téléchargées sur [Kaggle]( https://www.kaggle.com/c/home-credit-default-risk/data)  
 
-**Lien vers l'API** 
+- application_{train|test}.csv
+- bureau.csv
+- bureau_balance.csv
+- POS_CASH_balance.csv
+- credit_card_balance.csv
+- previous_application.csv
+- installments_payments.csv
+- HomeCredit_columns_description.csv
 
-https://oc-p7-cu77.onrender.com/
+**Lien vers le dashboard et vers l'API** 
+
+- API: https://api-oc-p7.onrender.com/docs#/  
+- Dashboard : https://oc-p7-cu77.onrender.com/
 
