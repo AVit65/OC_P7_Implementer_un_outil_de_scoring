@@ -1,4 +1,5 @@
 from sklearn.base import BaseEstimator, TransformerMixin
+import numpy as np
 
 class ConditionalImputer(BaseEstimator, TransformerMixin):
     def __init__(self, ref_col, variables):
