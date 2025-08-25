@@ -19,6 +19,7 @@ OC_P7_Implementer_un_outil_de_scoring/
 ├── API/                                        # Code source de l’API
 │   ├── __init__.py                             # Fichier d’initialisation 
 │   └── api.py                                  # Script principal de l’API
+│   └── requirements.txt                        # Liste des dépendances Python nécessaires
 │ 
 ├── Data/
 │ 
@@ -30,10 +31,12 @@ OC_P7_Implementer_un_outil_de_scoring/
 │
 ├── Streamlit/                                  # Code source du dashboard
 │   └── streamlit.py                            # Script principal du dashboard
+│   └── requirements.txt                        # Liste des dépendances Python nécessaires
 │ 
 └── Test/                                       # Scripts de test
 │  ├── __init__.py                              # Fichier d’initialisation 
 │  └── test_api.py                              # Tests unitaires de l’API
+│  └── requirements.txt                        # Liste des dépendances Python nécessaires
 │ 
 └── Util/                                       # Scripts de fonctions utilisées
 │  ├── __init__.py                              # Fichier d’initialisation 
